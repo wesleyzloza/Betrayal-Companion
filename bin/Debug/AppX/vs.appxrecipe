@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ALFRED-LAPTOP</Machine>
+    <WindowsUser>wesle</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>e57e5ef4-b322-4fd6-97a0-6cca963a4e08</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Wesley A. Zloza</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <RegisteredManifestChecksum>32556AEA9D9FEF410BC989BBA4BABCFEA6414D7AB6728EF81992E0C771DA36A6</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>e57e5ef4-b322-4fd6-97a0-6cca963a4e08_1.0.8.0_neutral__tjvgmbwt020pw</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>e57e5ef4-b322-4fd6-97a0-6cca963a4e08_tjvgmbwt020pw!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>e57e5ef4-b322-4fd6-97a0-6cca963a4e08</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Wesley A. Zloza</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.8.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-09-20T23:56:45.408</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\audio\dark_souls_you_died_sound.mp3">
+      <PackagePath>audio\dark_souls_you_died_sound.mp3</PackagePath>
+      <Modified>2016-08-26T08:33:43.215</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2016-09-20T21:49:15.733</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\css\jquery-ui.css">
+      <PackagePath>css\jquery-ui.css</PackagePath>
+      <Modified>2016-09-20T21:49:15.749</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\css\normalize.css">
+      <PackagePath>css\normalize.css</PackagePath>
+      <Modified>2016-09-20T21:49:15.773</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\css\winjs-symbols.css">
+      <PackagePath>css\winjs-symbols.css</PackagePath>
+      <Modified>2016-09-20T21:49:15.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\docs\user_manual_1st_edition_v4_2.pdf">
+      <PackagePath>docs\user_manual_1st_edition_v4_2.pdf</PackagePath>
+      <Modified>2016-08-26T08:33:43.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\fonts\winjs-symbols.eot">
+      <PackagePath>fonts\winjs-symbols.eot</PackagePath>
+      <Modified>2016-09-20T21:49:15.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\fonts\winjs-symbols.ttf">
+      <PackagePath>fonts\winjs-symbols.ttf</PackagePath>
+      <Modified>2016-09-20T21:49:15.910</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\fonts\winjs-symbols.woff">
+      <PackagePath>fonts\winjs-symbols.woff</PackagePath>
+      <Modified>2016-09-20T21:49:15.955</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\betrayal_bg.jpg">
+      <PackagePath>images\betrayal_bg.jpg</PackagePath>
+      <Modified>2016-08-26T08:33:43.657</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_00_default.png">
+      <PackagePath>images\chars\char_00_default.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.661</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_01_ox_bellows.png">
+      <PackagePath>images\chars\char_01_ox_bellows.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.666</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_02_darrin_flash_williams.png">
+      <PackagePath>images\chars\char_02_darrin_flash_williams.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.675</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_03_peter_akimoto.png">
+      <PackagePath>images\chars\char_03_peter_akimoto.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.680</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_04_brandon_jaspers.png">
+      <PackagePath>images\chars\char_04_brandon_jaspers.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.685</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_05_jenny_leclerc.png">
+      <PackagePath>images\chars\char_05_jenny_leclerc.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.691</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_06_heather_granville.png">
+      <PackagePath>images\chars\char_06_heather_granville.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.698</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_07_missy_dubourde.png">
+      <PackagePath>images\chars\char_07_missy_dubourde.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_08_zoe_ingstrom.png">
+      <PackagePath>images\chars\char_08_zoe_ingstrom.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.708</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_09_vivian_lopez.png">
+      <PackagePath>images\chars\char_09_vivian_lopez.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.713</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_10_madame_zostra.png">
+      <PackagePath>images\chars\char_10_madame_zostra.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_11_father_rhinehardt.png">
+      <PackagePath>images\chars\char_11_father_rhinehardt.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.725</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\chars\char_12_professor_longfellow.png">
+      <PackagePath>images\chars\char_12_professor_longfellow.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.733</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\dice\dice_0.png">
+      <PackagePath>images\dice\dice_0.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.737</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\dice\dice_1.png">
+      <PackagePath>images\dice\dice_1.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.739</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\dice\dice_2.png">
+      <PackagePath>images\dice\dice_2.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.742</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\LockScreenLogo.scale-200.png">
+      <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.744</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\SplashScreen.scale-200.png">
+      <PackagePath>images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-08-26T08:33:43.756</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\Square150x150Logo.scale-200.png">
+      <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-08-26T08:33:43.759</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\Square44x44Logo.scale-200.png">
+      <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-08-26T08:33:43.761</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-08-26T08:33:43.780</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\StoreLogo.png">
+      <PackagePath>images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-08-26T08:33:43.783</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\ui-icons_eee_256x240.png">
+      <PackagePath>images\ui-icons_eee_256x240.png</PackagePath>
+      <Modified>2016-08-26T08:33:43.786</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\Wide310x150Logo.scale-200.png">
+      <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-08-26T08:33:43.788</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\die_icon.svg">
+      <PackagePath>images\die_icon.svg</PackagePath>
+      <Modified>2016-09-20T21:49:16.004</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\event_icon.svg">
+      <PackagePath>images\event_icon.svg</PackagePath>
+      <Modified>2016-08-30T02:31:23.061</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\item_icon.svg">
+      <PackagePath>images\item_icon.svg</PackagePath>
+      <Modified>2016-08-30T20:05:12.327</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\omen_icon.svg">
+      <PackagePath>images\omen_icon.svg</PackagePath>
+      <Modified>2016-08-28T05:18:50.664</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\images\skull.svg">
+      <PackagePath>images\skull.svg</PackagePath>
+      <Modified>2016-08-29T21:52:03.140</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\index.html">
+      <PackagePath>index.html</PackagePath>
+      <Modified>2016-09-20T21:49:16.020</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\js\jquery-ui.min.js">
+      <PackagePath>js\jquery-ui.min.js</PackagePath>
+      <Modified>2016-08-26T08:33:45.157</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\js\jquery.min.js">
+      <PackagePath>js\jquery.min.js</PackagePath>
+      <Modified>2016-08-26T08:33:45.337</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\js\jquery.ui.touch-punch.min.js">
+      <PackagePath>js\jquery.ui.touch-punch.min.js</PackagePath>
+      <Modified>2016-08-26T08:33:45.368</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\js\main.js">
+      <PackagePath>js\main.js</PackagePath>
+      <Modified>2016-09-21T00:02:35.792</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\info\haunt_information_1st_ed.js">
+      <PackagePath>info\haunt_information_1st_ed.js</PackagePath>
+      <Modified>2016-08-26T08:33:44.494</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\info\haunt_information_2nd_ed.js">
+      <PackagePath>info\haunt_information_2nd_ed.js</PackagePath>
+      <Modified>2016-08-26T08:33:44.792</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\info\haunt_information_1st_ed.txt">
+      <PackagePath>info\haunt_information_1st_ed.txt</PackagePath>
+      <Modified>2016-08-26T08:33:44.509</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2016-09-20T21:49:41.132</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

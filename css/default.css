@@ -1,0 +1,868 @@
+﻿/* ALL OTHER STYLINGS */
+* {
+    box-sizing: border-box !important;
+}
+
+    *:focus {
+        outline: 0; /* Remove Chrome outlines */
+    }
+
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-size: 80%;
+    background: black;
+}
+
+h1, h2, h3, h4, h5, h6, p, label, span, ul, ol, a, div {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    color: #eee;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0em 0em 0.75em 0em;
+}
+
+a {
+    text-decoration: underline;
+    color: #0070c0 !important;
+}
+
+p {
+    margin: 0;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+ol, ul {
+    padding: 0.25em 0em;
+    padding-left: 1.5em;
+}
+
+th, td {
+    padding: 0em 0.5em;
+    text-align: left;
+    vertical-align: top;
+}
+
+hr {
+    border: 1px solid #333;
+    background: #333;
+    margin: 1em 0em;
+}
+
+/* PAGE.HTML */
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.pad {
+    padding: 1em !important;
+}
+
+.pad-l {
+    padding-left: 1em !important;
+}
+
+.marg-tb {
+    margin: 1em 0em !important;
+}
+
+.marg-t {
+    margin-top: 1em !important;
+}
+
+.marg-b {
+    margin-bottom: 1em !important;
+}
+
+.row {
+    float: left;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.col {
+    float: left;
+    display: block;
+}
+
+.col-1 {
+    width: 8.33333333333333%;
+}
+
+.col-2 {
+    width: 16.66666666666667%;
+}
+
+.col-3 {
+    width: 25.00000000000000%;
+}
+
+.col-4 {
+    width: 33.33333333333333%;
+}
+
+.col-5 {
+    width: 41.66666666666667%;
+}
+
+.col-6 {
+    width: 50.00000000000000%;
+}
+
+.col-7 {
+    width: 58.33333333333333%;
+}
+
+.col-8 {
+    width: 66.66666666666667%;
+}
+
+.col-9 {
+    width: 75.00000000000000%;
+}
+
+.col-10 {
+    width: 83.33333333333333%;
+}
+
+.col-11 {
+    width: 91.66666666666667%;
+}
+
+.col-12 {
+    width: 100.00000000000000%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+.sec-title {
+    text-align: center;
+    padding: 0.5em 0em;
+}
+
+
+/* FORMS */
+select {
+    width: 100%;
+    height: 48px;
+    padding: 0em 1em;
+    border: 1px solid #333;
+    background: #232323;
+    color: #eee;
+    background: #232323;
+    color:#eee;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    cursor:pointer;
+}
+
+.checkbox, .radio_btn {
+    padding: 1em 0em;
+}
+
+input[type=checkbox], input[type=radio] {
+    display: none;
+}
+
+input[type=checkbox] + label, input[type=radio] + label {
+    cursor: pointer;
+}
+
+input[type=checkbox] + label:before {
+    padding: 0;
+    display: inline-block;
+    content: "\00a0";
+    font-size: 16px;
+    line-height: 16px;
+    width: 16px;
+    max-width: 16px;
+    min-width: 16px;
+    height: 16px;
+    max-height: 16px;
+    border: 2px solid white;
+    background: none;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 0.75em;
+}
+
+input[type=checkbox]:checked + label:before {
+    padding: 0;
+    font-family: "winjs-symbols";
+    content: "";
+    line-height: 16px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    border-color: #0070c0;
+    background: #0070c0; 
+}
+
+input[type=radio] + label:before {
+    padding: 0;
+    display: inline-block;
+    font-family: "winjs-symbols";
+    content: "";
+    color: white;
+    font-size: 16px;
+    line-height: 16px;
+    width: 16px;
+    max-width: 16px;
+    min-width: 16px;
+    height: 16px;
+    max-height: 16px;
+    background: none;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 0.75em;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+input[type=radio]:checked + label:before {
+    font-family: "winjs-symbols";
+    content: "";
+    border-color: #0070c0;
+}
+
+button {
+    width: 100%;
+    background: #0070c0;
+    color: #eee;
+    border: 0px solid;
+    transition: all linear 0.5s;
+}
+
+    button:hover {
+        background: #0081dd;
+        cursor: pointer;
+    }
+
+.btn {
+    display: block;
+    background: #0070c0;
+    padding: 1em;
+    margin-bottom: 1em;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.btn:hover {
+    background: #0081dd;
+    cursor: pointer;
+}
+
+.btn-alert {
+    background: #ff5555 !important;
+    font-weight: bold;
+}
+
+    .btn-alert:hover {
+        background: #ff6666 !important;
+    }
+
+.btn-text {
+    background: none !important;
+    outline: 1px solid #333;
+}
+
+    .btn-text:hover {
+        background: rgba(255,255,255,0.05) !important;
+    }
+
+.modal {
+    position: absolute;
+    z-index: 999999999999;
+    display: none;
+}
+
+.visible {
+    visibility: visible !important;
+    opacity: 1;
+}
+
+.hidden {
+    visibility: hidden !important;
+    opacity: 0;
+}
+
+.strong_hidden {
+    display: none !important;
+}
+
+/* CHARACTER LIST */
+.list_item {
+    background: #333;
+}
+
+.list_char_photo {
+    width: 60px;
+    height: auto;
+    float: left;
+    margin-right: 1em;
+}
+
+.list_char_props {
+    float: left;
+    display: block;
+}
+
+.list_trait {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+/* NON LAYOUT PARAMETERS */
+#side_bar {
+    float: left;
+    height: 100vh;
+    width: 344px;
+    background: #171717;
+    overflow-y: hidden;
+    border-right: 1px solid black;
+}
+
+#char_card {
+    padding: 1em;
+    background: #111;
+}
+
+#char_photo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#char_photo_2 {
+    height: 85px;
+    width: auto;
+    display: block;
+    float: right;
+}
+
+#char_name {
+    padding-top: 1em;
+    font-weight: 700;
+    font-size: 120%;
+}
+
+#char_properties {
+    float: left;
+}
+
+#accordion {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0px;
+}
+
+.stat-title {
+    width: 100%;
+    display: block;
+    float: left;
+    margin: 1em 0em;
+}
+
+.stat-meter {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    display: block;
+    float: left;
+    background: #1d1d1d;
+    line-height: 1.5em;
+}
+
+.stat-meter li {
+    width: 11.11111111111111%;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 1em 0em;
+    margin: 0;
+}
+
+.stat-meter li:hover {
+    background: #0070c0;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+
+.stat-default {
+    color: mediumseagreen;
+    font-weight: bolder !important;
+}
+
+.stat-active {
+    background: #111;
+}
+
+.positive {
+    color: mediumseagreen;
+}
+
+.negative {
+    color: #ff5555;
+}
+
+.neutral{
+    color: #3daab5;
+}
+
+.death-icon img {
+    height: 1em;
+}
+
+.icon {
+    height: 1em;
+    width: auto;
+    vertical-align: middle;
+}
+
+#you_died {
+    position: absolute;
+    z-index: 11;
+    width: 100vw;
+    transition: visibility 1s, opacity 1s ease;
+}
+
+#you_died_bg {
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+}
+
+@font-face {
+  font-family: "Book Antiqua";
+  src: url("../fonts/book-antiqua.ttf") format("truetype"); }
+
+
+#you_died_text {
+    width: 100%;
+    text-align: center;
+    z-index: 12;
+    display: block;
+    margin: 0 auto;
+    color: #801d20;
+    opacity: 0.7;
+    text-shadow: 0px 0px 20px black;
+    font-size: 90px;
+    font-family: 'Book Antiqua';
+    line-height: 100px;
+    transition: font-size 1s linear;
+}
+
+.expand_text {
+    font-size: 115px !important;
+}
+
+#settings_container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    background: #232323;
+}
+
+#settings_dialog h2 {
+    margin-bottom: 0.5em;
+}
+
+#content_container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 392px;
+    height: 100vh;
+    background: #111;
+    background-image: url(../images/betrayal_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-y: scroll;
+    padding: 0em 1em 0em 1em;
+}
+
+#content_text {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2em;
+    height: auto;
+    background: #1d1d1d;
+    margin-top: 105px;
+    margin-bottom: 1em;
+    transition: visibility 0s, opacity 0.5s ease-in;
+}
+
+#btm_container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    z-index: 99;
+}
+
+#haunt_container {
+    display: block;
+    height: 96px;
+    background: #1d1d1d;
+    box-shadow: 0px 1px 0px black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 392px;
+}
+
+#haunt_list_title {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: #333;
+}
+
+#haunt_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 48px;
+}
+
+    #haunt_list li {
+        display: block;
+        float: left;
+        width: 7.69230769230769%;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+        #haunt_list li:hover {
+            background: #0070c0;
+            transition: linear 0.2s;
+        }
+
+.active {
+    background: #111;
+}
+
+#inventory_container {
+    background: #0d0d0d;
+}
+
+#add_item {
+    border: 2px dashed #4d4d4d;
+    border-radius: 6px;
+    height: 200px;
+    width: 100px;
+    float: right;
+    font-size: 1em;
+    color: #4d4d4d;
+}
+
+    #add_item:hover {
+        background: rgba(255,255,255,0.01);
+        transition: linear 0.2s;
+    }
+
+
+/** SETTINGS SECTION **/
+#settings_container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    #settings_container ul li {
+        display: block;
+        padding: 1em;
+        width: 100%;
+        border-top: 1px solid #0d0d0d;
+    }
+
+        #settings_container ul li:hover {
+            background: #0070c0;
+            transition: linear 0.2s;
+        }
+
+#character_list {
+    width: 320px;
+    background: black;
+    display: block;
+    float: left;
+}
+
+.char_list_img_contain {
+    width: 80px;
+}
+
+.char_list_img {
+    width: 80px;
+    display: block;
+    float: left;
+}
+
+.char_list_info {
+    width: 240px;
+    float: left;
+}
+
+.char_list_item {
+    background: #1d1d1d;
+    padding: 0.5em;
+    margin: 0.5em 0em;
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.hidden-lg {
+    display: none !important;
+}
+
+main {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100vh;
+    padding-left: 48px;
+    background: black;
+}
+
+#slider_contain {
+    padding: 1em 3em 1em 2em;
+}
+
+.dice {
+    width: 48px;
+    height: auto;
+    margin: 0.125em 0.25em;
+}
+
+#total_roll {
+    line-height: 200%;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+    box-sizing: border-box;
+    display: block;
+    width: 48px;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    background: #111;
+    overflow: hidden;
+    z-index: 10;
+    transition: ease-in 0.1s;
+}
+
+.nav_open {
+    width: 320px;
+    transition: all linear 0.1s;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+#nav_tray {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    float: left;
+    display: block;
+    height: 48px;
+}
+
+#menu_icon, #menu_icon_sm {
+    display: block;
+    width: 48px;
+    height: 48px;
+    line-height: 42.5px;
+    float: left;
+    text-align: center;
+    color: white !important;
+    cursor: pointer;
+    font-size: 1.6em;
+    font-weight: 100;
+}
+
+#menu_icon_sm {
+    display: none;
+}
+
+    #menu_icon:hover, #menu_icon_sm:hover {
+        background: rgba(255,255,255,0.1);
+        transition: linear 0.2s;
+    }
+
+#app_title {
+    text-align: left;
+    line-height: 48px;
+    background: rgba(255,255,255,0.1);
+}
+
+#app_title p {
+    font-weight: bold !important;
+    line-height: 48px !important;
+    font-size: 1em !important;
+}
+
+#nav_list {
+    margin: 0;
+    list-style: none;
+}
+
+    #nav_list li {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 48px;
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+        #nav_list li:hover {
+            background: rgba(255,255,255,0.2);
+            transition: linear 0.2s;
+        }
+
+.nav-icon {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 44px;
+    float: left;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.nav-text * {
+    line-height: 48px !important;
+    font-size: 1em !important;
+}
+
+#tabs {
+    display: inline-block !important;
+    width: 100%;
+}
+
+    #tabs ul li a {
+        padding: 1em;
+        color: white !important;
+    }
+
+.ui-widget-header {
+    border: 0;
+    border-top: 1px solid #111;
+}
+
+.ui-dialog {
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+/* MEDIA QUERY TO CONTROL STYLE OF PAGE */
+@media (max-width: 720px) {
+    #side_bar {
+        width: 100%;
+        border: 0;
+    }
+
+    #haunt_container {
+        display: block;
+        height: 96px;
+    }
+
+    #content-text {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+
+    .hidden-lg {
+        display: block !important;
+    }
+
+    .hidden-sm {
+        display: none !important;
+    }
+
+    /* CHARACTER INFORMATION */
+    #char_card {
+        padding: 0em;
+        height: 48px;
+    }
+
+    #char_name {
+        float: left;
+        text-align: left;
+        line-height: 48px;
+        padding: 0;
+    }
+
+    #char_properties {
+        font-size: 0.85em;
+        width: 75%;
+    }
+
+    #char_photo_2 {
+        width: 25%;
+        max-width: 75px;
+        height: auto;
+    }
+
+    #you_died_text {
+        font-size: 4em !important;
+    }
+
+    /* NAVIGATION */
+    main {
+        padding-left: 0px;
+    }
+
+    nav {
+        width: 0px;
+        margin-right: 0px;
+    }
+
+    #nav_list li {
+        width: 100%;
+        margin: 0;
+    }
+
+    .ui-dialog{
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+}

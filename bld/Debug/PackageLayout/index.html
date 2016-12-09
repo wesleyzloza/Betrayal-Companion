@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- APPLICATION TITLE -->
+    <title>Betrayal Companion App</title>
+
+    <!-- META TAG INFORMATION -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/winjs-symbols.css">
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/default.css" />
+
+    <!-- ADDING SCRIPTS USED -->
+    <script type="text/javascript" src="js/jquery.min.js" defer></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js" defer></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js" defer></script> <!-- FIX JQUERY UI SLIDER FOR MOBILE -->
+    <script type="text/javascript" src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav id="nav">
+        <div id="nav_tray">
+            <div id="menu_icon"><span class="glyph glyph-hamburger" aria-hidden="true"></span></div>
+            <div id="app_title">
+                <p>BETRAYAL COMPANION</p>
+            </div>
+        </div>
+
+        <ul id="nav_list" class="row">
+            <li id="change_char">
+                <div class="nav-icon"><span class="glyph glyph-contact" aria-hidden="true"></span> </div>
+                <div class="nav-text">
+                    <p>Change Character</p>
+                </div>
+            </li>
+            <li id="reveal_haunt">
+                <div class="nav-icon"><span class="glyph glyph-view" aria-hidden="true"></span> </div>
+                <div class="nav-text">
+                    <p>Reveal the Haunt</p>
+                </div>
+            </li>
+            <!--
+            <li>
+                <a href="ms-appx-web://docs/user_manual_1st_edition_v4_2.pdf" target="_blank">
+                    <div class="nav-icon"><span class="glyph glyph-document" aria-hidden="true"></span> </div>
+                    <div class="nav-text">
+                        <p>Open User Manual</p>
+                    </div>
+                </a>
+            </li> -->
+            <li id="dice_roller_icon">
+                <div class="nav-icon"><img class="icon" src="images/die_icon.svg"/></div>
+                <div class="nav-text">
+                    <p>Dice Roller</p>
+                </div>
+            </li>
+            <li id="about_icon">
+                <div class="nav-icon"><i class="glyph glyph-settings" aria-hidden="true"></i> </div>
+                <div class="nav-text">
+                    <p>Settings</p>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- PRIMARY CONTAINING ELEMENT -->
+    <main>
+        <!-- SIDEBAR (LARGE SCREENS) - DEFAULT AREA (SMALL SCREENS) -->
+        <div id="side_bar">
+            <div id="char_card" class="row">
+                <div id="menu_icon_sm" class="hidden-lg"><span class="glyph glyph-hamburger" aria-hidden="true"></span></div>
+                <img id="char_photo" class="hidden-sm" src="images/chars/char_00_default.png" />
+                <p id="char_name" class="text-center">--</p>
+            </div>
+
+            <!-- CHARACTER INFORMATION -->
+            <div class="row pad">
+                <div id="char_properties">
+                    <label>Age: </label><span id="age">--</span><br />
+                    <label>Height: </label><span id="height">--</span><br />
+                    <label>Weight: </label><span id="weight">--</span><br />
+                    <label>Hobbies: </label><span id="hobbies">--</span><br />
+                    <label>Birthday: </label><span id="birthday">--</span>
+                </div>
+                <img id="char_photo_2" class="hidden-lg" src="images/chars/char_00_default.png" />
+            </div>
+
+            <!-- TABS -->
+            <div id="tabs">
+                <ul id="tab_list">
+                    <li><a href="#tabs-1">Description</a></li>
+                    <li><a href="#tabs-2">Stats</a></li>
+                </ul>
+
+                <!-- CHARACTER DESCRIPTION / BACKSTORY -->
+                <div id="tabs-1">
+                    <div id="char_description">
+                        <div id="description">--</div>
+                    </div>
+                </div>
+
+                <!-- CHARACTER STATISTICS -->
+                <div id="tabs-2">
+                    <div id="char_stats">
+                        <div class="row">
+                            <!-- SPEED INFORMATION -->
+                            <div class="row">
+                                <div class="col col-6">Speed:</div>
+                                <div class="col col-3">
+                                    <p class="row text-right">Adj: <span id="speed_adj">n/a</span></p>
+                                </div>
+                                <div class="col col-3">
+                                    <p class="row text-right">HP: <span id="speed_hp">n/a</span></p>
+                                </div>
+                            </div>
+                            <ul id="speed" class="stat-meter marg-tb">
+                                <li class="stat-default death-icon"><img src="images/skull.svg"></li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                            </ul>
+
+                            <!-- MIGHT INFORMATION -->
+                            <div class="row">
+                                <div class="col col-6">Might:</div>
+                                <div class="col col-3">
+                                    <p class="row text-right">Adj: <span id="might_adj">n/a</span></p>
+                                </div>
+                                <div class="col col-3">
+                                    <p class="row text-right">HP: <span id="might_hp">n/a</span></p>
+                                </div>
+                            </div>
+                            <ul id="might" class="stat-meter marg-tb">
+                                <li class="stat-default death-icon"><img src="images/skull.svg"></li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                            </ul>
+
+                            <!-- SANITY INFORMATION -->
+                            <div class="row">
+                                <div class="col col-6">Sanity:</div>
+                                <div class="col col-3">
+                                    <p class="row text-right">Adj: <span id="sanity_adj">n/a</span></p>
+                                </div>
+                                <div class="col col-3">
+                                    <p class="row text-right">HP: <span id="sanity_hp">n/a</span></p>
+                                </div>
+                            </div>
+                            <ul id="sanity" class="stat-meter marg-tb">
+                                <li class="stat-default death-icon"><img src="images/skull.svg"></li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                            </ul>
+
+                            <!-- KNOWLEDGE INFORMATION -->
+                            <div class="row">
+                                <div class="col col-6">Knowledge:</div>
+                                <div class="col col-3">
+                                    <p class="row text-right">Adj: <span id="knowledge_adj">n/a</span></p>
+                                </div>
+                                <div class="col col-3">
+                                    <p class="row text-right">HP: <span id="knowledge_hp">n/a</span></p>
+                                </div>
+                            </div>
+                            <ul id="knowledge" class="stat-meter marg-tb">
+                                <li class="stat-default death-icon"><img src="images/skull.svg"></li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                            </ul>
+                        </div>
+                        <button id="reset_char" class="pad btn-text marg-tb">Reset</button>
+                    </div>
+                </div>
+
+                <!-- HAUNT INFO -->
+                <!-- <div id="tabs-3"></div> -->
+            </div>
+        </div>
+
+        <!-- CONTENT CONTAINER -->
+        <div id="content_container" class="hidden-sm">
+            <div id="haunt_container">
+                    <div id="haunt_list_title">Haunt Meter</div>
+                    <ul id="haunt_list">
+                        <li class="active">0</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                    </ul>
+            </div>
+            <div id="content_text" class="hidden"></div>
+        </div>
+
+    </main>
+
+    <!-- MODAL WINDOWS -->
+    <!-- YOU DIED DIALOG -->
+    <div id="you_died" class="hidden">
+        <div style="height: 40vh;"></div>
+        <div id="you_died_bg">
+            <p id="you_died_text">YOU DIED</p>
+        </div>
+    </div>
+
+    <!-- CHANGE CHARACTER -->
+    <div class="modal" id="char_dialog" tite="Choose Character">
+        <div class="row">
+            <form>
+                <div class="row">
+                    <select id="character_selection">
+                        <option value="ox_bellows">Ox Bellows</option>
+                        <option value="darrin_flash_williams">Darrin "Flash" Williams</option>
+                        <option value="peter_akimoto">Peter Akimoto</option>
+                        <option value="brandon_jaspers">Brandon Jaspers</option>
+                        <option value="jenny_leclerc">Jenny LeClerc</option>
+                        <option value="heather_granville">Heather Granville</option>
+                        <option value="missy_dubourde">Missy Dubourde</option>
+                        <option value="zoe_ingstrom">Zoe Ingstrom</option>
+                        <option value="vivian_lopez">Vivian Lopez</option>
+                        <option value="madame_zostra">Madame Zostra</option>
+                        <option value="father_rhinehardt">Father Rhinehardt</option>
+                        <option value="professor_longfellow">Professor Longfellow</option>
+                    </select>
+                    <!-- <div class="col col-12 marg-tb">
+                        <button id="rand_char_select" class="col col-6 pad" value="random">Random</button>
+                        <button id="cancel_char_select" class="col col-6 pad" value="close">Close</button>
+                    </div>
+                        -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- REVEAL THE HAUNT -->
+    <div class="modal" id="dialog" title="Reveal the Haunt">
+        <form>
+            <div class="row">
+                <div class="col col-6">
+                    <div class="row">
+                        <p class="marg-b"><b>Room</b></p>
+                    </div>
+                    <div class="row">
+                        <select id="haunted_rooms" name="haunted_rooms">
+                                <option value="abandoned_room">Abandomed Room</option>
+                                <option value="balcony">Balcony</option>
+                                <option value="catacombs">Catacombs</option>
+                                <option value="charred_room">Charred Room</option>
+                                <option value="dining_room">Dining Room</option>
+                                <option value="furnace_room">Furnace Room</option>
+                                <option value="gallery">Gallery</option>
+                                <option value="gymnasium">Gymnasium</option>
+                                <option value="junk_room">Junk Room</option>
+                                <option value="kitchen">Kitchen</option>
+                                <option value="master_bedroom">Master Bedroom</option>
+                                <option value="pentagram_chamber">Pentagram Chamber</option>
+                                <option value="servants_quarters">Servant's Quarters</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col col-6">
+                    <div class="row">
+                        <p class="marg-b"><b>Omen</b></p>
+                    </div>
+                    <div class="row">
+                        <select id="omens" name="omens">
+                                <option value="bite">Bite</option>
+                                <option value="book">Book</option>
+                                <option value="crystal_ball">Crystal Ball</option>
+                                <option value="dog">Dog</option>
+                                <option value="girl">Girl</option>
+                                <option value="holy_symbol">Holy Symbol</option>
+                                <option value="madman">Madman</option>
+                                <option value="mask">Mask</option>
+                                <option value="medallion">Medallion</option>
+                                <option value="ring">Ring</option>
+                                <option value="skull">Skull</option>
+                                <option value="spear">Spear</option>
+                                <option value="spirit_board">Spirit Board</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- <button id="reveal_haunt_btn" class="marg-tb pad" type="button">Reveal the Haunt</button> -->
+        </form>
+        <div id="haunt_reveal_text" class="row marg-t"></div>
+        <div id="reveal_btn_container" class="hidden">
+            <button id="btn_secrets_survival" class="col col-6 pad">Secrets of Survival</button>
+            <button id="btn_traitors_tome" class="col col-6 pad">Traitor's Tome</button>
+        </div>
+    </div>
+
+    <!-- DICE ROLL -->
+    <div id="dice_roll_dialog">
+        <div class="row marg-b"> 
+            <div class="col col-8">
+                <div id="slider_contain">
+                    <div id="dice_slider" class="row"></div>
+                </div>
+            </div>
+            <div class="col col-4">
+                <button id="btn_roll" class="pad">Roll <span id="num_dice"></span></button>
+            </div>
+        </div>
+        <div id="roll_results" class="row hidden">
+            <div id="dice_contain" class="col col-8"></div>
+            <div id="total_roll" class="col col-4 pad"></div>
+        </div>
+    </div>
+
+    <!-- ABOUT/SETTINGS INFORMATION -->
+    <div id="settings_dialog">
+        <div class="row marg-b">
+            <p><b>EDITION OF THE GAME</b></p><br>
+            <form id="game_edition">
+                <input type="radio" name="game_edition" value="2ed" checked="checked"> 2nd Edition<br>
+                <input type="radio" name="game_edition" value="1ed"> 1st Edition<br>
+            </form>
+            <p><br><b>Disclaimer:</b> the 1st edition of the game is known to have issues with clarity. The app is programmed to use the 2nd edition by default. Please use the 1st edition at your own risk; any issues experienced are not the fault of the developer.</p>
+            <hr>
+            <div id="reset_app" class="pad btn-alert marg-b text-center">Reset App</div>
+            <p>Resetting the app clears the local storage used to save trait states. This is a quick way to retore the default state for every character.</p>
+            <hr>
+            <p>A special thank you to Evan S. (EvDoge), Stephanie Z., Lukas B., Alex L, &amp; Robert Z. for inspiring me to make this app.</p>
+        </div>
+    </div>
+
+</body>
+</html>

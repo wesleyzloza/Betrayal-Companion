@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="e57e5ef4-b322-4fd6-97a0-6cca963a4e08" version="1.0" primary="true">
+		<Qualifiers>
+			<AlternateForm>UNPLATED</AlternateForm>
+			<Scale>200</Scale>
+			<TargetSize>24</TargetSize>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="index.html" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/index.html">
+				<Candidate type="Path">
+					<Value>index.html</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="audio">
+				<NamedResource name="dark_souls_you_died_sound.mp3" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/audio/dark_souls_you_died_sound.mp3">
+					<Candidate type="Path">
+						<Value>audio\dark_souls_you_died_sound.mp3</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="css">
+				<NamedResource name="default.css" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/css/default.css">
+					<Candidate type="Path">
+						<Value>css\default.css</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="jquery-ui.css" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/css/jquery-ui.css">
+					<Candidate type="Path">
+						<Value>css\jquery-ui.css</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="normalize.css" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/css/normalize.css">
+					<Candidate type="Path">
+						<Value>css\normalize.css</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="winjs-symbols.css" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/css/winjs-symbols.css">
+					<Candidate type="Path">
+						<Value>css\winjs-symbols.css</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="docs">
+				<NamedResource name="user_manual_1st_edition_v4_2.pdf" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/docs/user_manual_1st_edition_v4_2.pdf">
+					<Candidate type="Path">
+						<Value>docs\user_manual_1st_edition_v4_2.pdf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="fonts">
+				<NamedResource name="winjs-symbols.eot" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/fonts/winjs-symbols.eot">
+					<Candidate type="Path">
+						<Value>fonts\winjs-symbols.eot</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="winjs-symbols.ttf" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/fonts/winjs-symbols.ttf">
+					<Candidate type="Path">
+						<Value>fonts\winjs-symbols.ttf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="winjs-symbols.woff" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/fonts/winjs-symbols.woff">
+					<Candidate type="Path">
+						<Value>fonts\winjs-symbols.woff</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="betrayal_bg.jpg" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/betrayal_bg.jpg">
+					<Candidate type="Path">
+						<Value>images\betrayal_bg.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="die_icon.svg" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/die_icon.svg">
+					<Candidate type="Path">
+						<Value>images\die_icon.svg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="event_icon.svg" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/event_icon.svg">
+					<Candidate type="Path">
+						<Value>images\event_icon.svg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="item_icon.svg" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/item_icon.svg">
+					<Candidate type="Path">
+						<Value>images\item_icon.svg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LockScreenLogo.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/LockScreenLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>images\LockScreenLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="omen_icon.svg" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/omen_icon.svg">
+					<Candidate type="Path">
+						<Value>images\omen_icon.svg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="skull.svg" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/skull.svg">
+					<Candidate type="Path">
+						<Value>images\skull.svg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/SplashScreen.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>images\SplashScreen.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/Square44x44Logo.png">
+					<Candidate qualifiers="TargetSize-24, AlternateForm-UNPLATED" type="Path">
+						<Value>images\Square44x44Logo.targetsize-24_altform-unplated.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/StoreLogo.png">
+					<Candidate type="Path">
+						<Value>images\StoreLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ui-icons_eee_256x240.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/ui-icons_eee_256x240.png">
+					<Candidate type="Path">
+						<Value>images\ui-icons_eee_256x240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>images\Wide310x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="chars">
+					<NamedResource name="char_00_default.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_00_default.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_00_default.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="char_01_ox_bellows.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_01_ox_bellows.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_01_ox_bellows.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="char_02_darrin_flash_williams.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_02_darrin_flash_williams.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_02_darrin_flash_williams.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="char_03_peter_akimoto.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_03_peter_akimoto.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_03_peter_akimoto.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="char_04_brandon_jaspers.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_04_brandon_jaspers.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_04_brandon_jaspers.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="char_05_jenny_leclerc.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_05_jenny_leclerc.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_05_jenny_leclerc.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="char_06_heather_granville.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_06_heather_granville.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_06_heather_granville.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="char_07_missy_dubourde.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_07_missy_dubourde.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_07_missy_dubourde.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="char_08_zoe_ingstrom.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_08_zoe_ingstrom.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_08_zoe_ingstrom.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="char_09_vivian_lopez.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_09_vivian_lopez.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_09_vivian_lopez.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="char_10_madame_zostra.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_10_madame_zostra.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_10_madame_zostra.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="char_11_father_rhinehardt.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_11_father_rhinehardt.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_11_father_rhinehardt.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="char_12_professor_longfellow.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/chars/char_12_professor_longfellow.png">
+						<Candidate type="Path">
+							<Value>images\chars\char_12_professor_longfellow.png</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="dice">
+					<NamedResource name="dice_0.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/dice/dice_0.png">
+						<Candidate type="Path">
+							<Value>images\dice\dice_0.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="dice_1.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/dice/dice_1.png">
+						<Candidate type="Path">
+							<Value>images\dice\dice_1.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="dice_2.png" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/images/dice/dice_2.png">
+						<Candidate type="Path">
+							<Value>images\dice\dice_2.png</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="info">
+				<NamedResource name="haunt_information_1st_ed.js" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/info/haunt_information_1st_ed.js">
+					<Candidate type="Path">
+						<Value>info\haunt_information_1st_ed.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="haunt_information_1st_ed.txt" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/info/haunt_information_1st_ed.txt">
+					<Candidate type="Path">
+						<Value>info\haunt_information_1st_ed.txt</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="haunt_information_2nd_ed.js" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/info/haunt_information_2nd_ed.js">
+					<Candidate type="Path">
+						<Value>info\haunt_information_2nd_ed.js</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="js">
+				<NamedResource name="jquery-ui.min.js" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/js/jquery-ui.min.js">
+					<Candidate type="Path">
+						<Value>js\jquery-ui.min.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="jquery.min.js" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/js/jquery.min.js">
+					<Candidate type="Path">
+						<Value>js\jquery.min.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="jquery.ui.touch-punch.min.js" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/js/jquery.ui.touch-punch.min.js">
+					<Candidate type="Path">
+						<Value>js\jquery.ui.touch-punch.min.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="main.js" uri="ms-resource://e57e5ef4-b322-4fd6-97a0-6cca963a4e08/Files/js/main.js">
+					<Candidate type="Path">
+						<Value>js\main.js</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

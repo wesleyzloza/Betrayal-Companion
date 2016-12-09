@@ -1,0 +1,16 @@
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bin\Debug\AppxManifest.xml
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bin\Debug\BetrayalAppV2.build.appxrecipe
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\ResourceHandlingTask.state
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\priconfig.xml
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\priconfig.xml.intermediate
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\layout.resfiles
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\layout.resfiles.intermediate
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\resources.resfiles
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\resources.resfiles.intermediate
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\pri.resfiles
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\pri.resfiles.intermediate
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\qualifiers.txt
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\qualifiers.txt.intermediate
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bld\Debug\ProjectArchitectures.txt
+C:\Users\wesle\Source\Repos\BetrayalAppV2\BetrayalAppV2\bin\Debug\ReverseMap\resources.pri

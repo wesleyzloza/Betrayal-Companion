@@ -1,0 +1,785 @@
+﻿@charset "UTF-8";
+
+@font-face {
+  font-family: "winjs-symbols";
+  src: url("../fonts/winjs-symbols.eot");
+  src: url("../fonts/winjs-symbols.eot#iefix") format("embedded-opentype"), url("../fonts/winjs-symbols.ttf") format("truetype"); }
+
+.glyph {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  overflow: hidden; }
+  .glyph:before {
+    display: block;
+    width: 1em;
+    height: 1em;
+    font-family: "winjs-symbols";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    /* -moz-osx-font-smoothing: grayscale; */ }
+
+.glyph-chevron-up::before {
+  content: ""; }
+
+.glyph-chevron-down::before {
+  content: ""; }
+
+.glyph-checkmark::before {
+  content: ""; }
+
+.glyph-star::before {
+  content: ""; }
+
+.glyph-magnifier::before {
+  content: ""; }
+
+.glyph-semantic-zoom::before {
+  content: ""; }
+
+.glyph-arrow-left::before {
+  content: ""; }
+
+.glyph-arrow-right::before {
+  content: ""; }
+
+.glyph-chevron-left::before {
+  content: ""; }
+
+.glyph-chevron-right::before {
+  content: ""; }
+
+.glyph-chevron-up-2::before {
+  content: ""; }
+
+.glyph-chevron-down-2::before {
+  content: ""; }
+
+.glyph-checkmark-2::before {
+  content: ""; }
+
+.glyph-star-outline::before {
+  content: ""; }
+
+.glyph-chevron-right-2::before {
+  content: ""; }
+
+.glyph-chevron-left-2::before {
+  content: ""; }
+
+.glyph-previous::before {
+  content: ""; }
+
+.glyph-next::before {
+  content: ""; }
+
+.glyph-play::before {
+  content: ""; }
+
+.glyph-pause::before {
+  content: ""; }
+
+.glyph-edit::before {
+  content: ""; }
+
+.glyph-edit-mirrored::before {
+  content: ""; }
+
+.glyph-save::before {
+  content: ""; }
+
+.glyph-clear::before {
+  content: ""; }
+
+.glyph-delete::before {
+  content: ""; }
+
+.glyph-remove::before {
+  content: ""; }
+
+.glyph-add::before {
+  content: ""; }
+
+.glyph-cancel::before {
+  content: ""; }
+
+.glyph-accept::before {
+  content: ""; }
+
+.glyph-more::before {
+  content: ""; }
+
+.glyph-redo::before {
+  content: ""; }
+
+.glyph-undo::before {
+  content: ""; }
+
+.glyph-home::before {
+  content: ""; }
+
+.glyph-up::before {
+  content: ""; }
+
+.glyph-forward::before {
+  content: ""; }
+
+.glyph-back::before {
+  content: ""; }
+
+.glyph-favorite::before {
+  content: ""; }
+
+.glyph-camera::before {
+  content: ""; }
+
+.glyph-settings::before {
+  content: ""; }
+
+.glyph-video::before {
+  content: ""; }
+
+.glyph-sync::before {
+  content: ""; }
+
+.glyph-download::before {
+  content: ""; }
+
+.glyph-mail::before {
+  content: ""; }
+
+.glyph-magnifier-2::before {
+  content: ""; }
+
+.glyph-help::before {
+  content: ""; }
+
+.glyph-help-mirrored::before {
+  content: ""; }
+
+.glyph-upload::before {
+  content: ""; }
+
+.glyph-emoji::before {
+  content: ""; }
+
+.glyph-two-page::before {
+  content: ""; }
+
+.glyph-leave-chat::before {
+  content: ""; }
+
+.glyph-mail-forward::before {
+  content: ""; }
+
+.glyph-clock::before {
+  content: ""; }
+
+.glyph-send::before {
+  content: ""; }
+
+.glyph-crop::before {
+  content: ""; }
+
+.glyph-rotate-camera::before {
+  content: ""; }
+
+.glyph-people::before {
+  content: ""; }
+
+.glyph-close-pane::before {
+  content: ""; }
+
+.glyph-close-pane-mirrored::before {
+  content: ""; }
+
+.glyph-open-pane::before {
+  content: ""; }
+
+.glyph-open-pane-mirrored::before {
+  content: ""; }
+
+.glyph-world::before {
+  content: ""; }
+
+.glyph-flag::before {
+  content: ""; }
+
+.glyph-preview-link::before {
+  content: ""; }
+
+.glyph-globe::before {
+  content: ""; }
+
+.glyph-trim::before {
+  content: ""; }
+
+.glyph-attach-camera::before {
+  content: ""; }
+
+.glyph-zoom-in::before {
+  content: ""; }
+
+.glyph-bookmarks::before {
+  content: ""; }
+
+.glyph-bookmarks-mirrored::before {
+  content: ""; }
+
+.glyph-document::before {
+  content: ""; }
+
+.glyph-protected-document::before {
+  content: ""; }
+
+.glyph-page::before {
+  content: ""; }
+
+.glyph-multi-select::before {
+  content: ""; }
+
+.glyph-multi-select-mirrored::before {
+  content: ""; }
+
+.glyph-comment::before {
+  content: ""; }
+
+.glyph-mail-2::before {
+  content: ""; }
+
+.glyph-contact-info::before {
+  content: ""; }
+
+.glyph-contact-info-mirrored::before {
+  content: ""; }
+
+.glyph-hang-up::before {
+  content: ""; }
+
+.glyph-view-all::before {
+  content: ""; }
+
+.glyph-map-pin::before {
+  content: ""; }
+
+.glyph-phone::before {
+  content: ""; }
+
+.glyph-video-chat::before {
+  content: ""; }
+
+.glyph-switch::before {
+  content: ""; }
+
+.glyph-contact::before {
+  content: ""; }
+
+.glyph-rename::before {
+  content: ""; }
+
+.glyph-pin::before {
+  content: ""; }
+
+.glyph-music-info::before {
+  content: ""; }
+
+.glyph-go::before {
+  content: ""; }
+
+.glyph-go-mirrored::before {
+  content: ""; }
+
+.glyph-keyboard::before {
+  content: ""; }
+
+.glyph-dock-left::before {
+  content: ""; }
+
+.glyph-dock-left-mirrored::before {
+  content: ""; }
+
+.glyph-dock-right::before {
+  content: ""; }
+
+.glyph-dock-right-mirrored::before {
+  content: ""; }
+
+.glyph-dock-bottom::before {
+  content: ""; }
+
+.glyph-remote::before {
+  content: ""; }
+
+.glyph-refresh::before {
+  content: ""; }
+
+.glyph-rotate::before {
+  content: ""; }
+
+.glyph-shuffle::before {
+  content: ""; }
+
+.glyph-list::before {
+  content: ""; }
+
+.glyph-list-mirrored::before {
+  content: ""; }
+
+.glyph-shop::before {
+  content: ""; }
+
+.glyph-select-all::before {
+  content: ""; }
+
+.glyph-orientation::before {
+  content: ""; }
+
+.glyph-import::before {
+  content: ""; }
+
+.glyph-import-mirrored::before {
+  content: ""; }
+
+.glyph-import-all::before {
+  content: ""; }
+
+.glyph-import-all-mirrored::before {
+  content: ""; }
+
+.glyph-browse-photos::before {
+  content: ""; }
+
+.glyph-webcam::before {
+  content: ""; }
+
+.glyph-picture::before {
+  content: ""; }
+
+.glyph-save-local::before {
+  content: ""; }
+
+.glyph-caption::before {
+  content: ""; }
+
+.glyph-stop::before {
+  content: ""; }
+
+.glyph-show-results::before {
+  content: ""; }
+
+.glyph-show-results-mirrored::before {
+  content: ""; }
+
+.glyph-volume::before {
+  content: ""; }
+
+.glyph-repair::before {
+  content: ""; }
+
+.glyph-message::before {
+  content: ""; }
+
+.glyph-page-outline::before {
+  content: ""; }
+
+.glyph-calendar-day::before {
+  content: ""; }
+
+.glyph-calendar-week::before {
+  content: ""; }
+
+.glyph-calendar::before {
+  content: ""; }
+
+.glyph-calendar-mirrored::before {
+  content: ""; }
+
+.glyph-characters::before {
+  content: ""; }
+
+.glyph-mail-reply-all::before {
+  content: ""; }
+
+.glyph-mail-reply-all-mirrored::before {
+  content: ""; }
+
+.glyph-mail-read::before {
+  content: ""; }
+
+.glyph-link::before {
+  content: ""; }
+
+.glyph-accounts::before {
+  content: ""; }
+
+.glyph-show-bcc::before {
+  content: ""; }
+
+.glyph-hide-bcc::before {
+  content: ""; }
+
+.glyph-cut::before {
+  content: ""; }
+
+.glyph-attach::before {
+  content: ""; }
+
+.glyph-paste::before {
+  content: ""; }
+
+.glyph-filter::before {
+  content: ""; }
+
+.glyph-copy::before {
+  content: ""; }
+
+.glyph-emoji-2::before {
+  content: ""; }
+
+.glyph-important::before {
+  content: ""; }
+
+.glyph-mail-reply::before {
+  content: ""; }
+
+.glyph-mail-reply-mirrored::before {
+  content: ""; }
+
+.glyph-slideshow::before {
+  content: ""; }
+
+.glyph-sort::before {
+  content: ""; }
+
+.glyph-manage::before {
+  content: ""; }
+
+.glyph-all-apps::before {
+  content: ""; }
+
+.glyph-all-apps-mirrored::before {
+  content: ""; }
+
+.glyph-disconnect-drive::before {
+  content: ""; }
+
+.glyph-map-drive::before {
+  content: ""; }
+
+.glyph-new-window::before {
+  content: ""; }
+
+.glyph-open-with::before {
+  content: ""; }
+
+.glyph-open-with-mirrored::before {
+  content: ""; }
+
+.glyph-contact-presence::before {
+  content: ""; }
+
+.glyph-priority::before {
+  content: ""; }
+
+.glyph-upload-2::before {
+  content: ""; }
+
+.glyph-go-to-today::before {
+  content: ""; }
+
+.glyph-font::before {
+  content: ""; }
+
+.glyph-font-color::before {
+  content: ""; }
+
+.glyph-contact-2::before {
+  content: ""; }
+
+.glyph-folder::before {
+  content: ""; }
+
+.glyph-audio::before {
+  content: ""; }
+
+.glyph-placeholder::before {
+  content: ""; }
+
+.glyph-view::before {
+  content: ""; }
+
+.glyph-set-lockscreen::before {
+  content: ""; }
+
+.glyph-set-tile::before {
+  content: ""; }
+
+.glyph-cc::before {
+  content: ""; }
+
+.glyph-stop-slideshow::before {
+  content: ""; }
+
+.glyph-permissions::before {
+  content: ""; }
+
+.glyph-highlight::before {
+  content: ""; }
+
+.glyph-disable-updates::before {
+  content: ""; }
+
+.glyph-unfavorite::before {
+  content: ""; }
+
+.glyph-unpin::before {
+  content: ""; }
+
+.glyph-open-local::before {
+  content: ""; }
+
+.glyph-mute::before {
+  content: ""; }
+
+.glyph-italic::before {
+  content: ""; }
+
+.glyph-underline::before {
+  content: ""; }
+
+.glyph-bold::before {
+  content: ""; }
+
+.glyph-move-to-folder::before {
+  content: ""; }
+
+.glyph-like-dislike::before {
+  content: ""; }
+
+.glyph-dislike::before {
+  content: ""; }
+
+.glyph-like::before {
+  content: ""; }
+
+.glyph-align-right::before {
+  content: ""; }
+
+.glyph-align-center::before {
+  content: ""; }
+
+.glyph-align-left::before {
+  content: ""; }
+
+.glyph-magnifier-3::before {
+  content: ""; }
+
+.glyph-zoom-out::before {
+  content: ""; }
+
+.glyph-open-file::before {
+  content: ""; }
+
+.glyph-other-user::before {
+  content: ""; }
+
+.glyph-admin::before {
+  content: ""; }
+
+.glyph-street::before {
+  content: ""; }
+
+.glyph-map::before {
+  content: ""; }
+
+.glyph-clear-selection::before {
+  content: ""; }
+
+.glyph-clear-selection-mirrored::before {
+  content: ""; }
+
+.glyph-font-decrease::before {
+  content: ""; }
+
+.glyph-font-increase::before {
+  content: ""; }
+
+.glyph-font-size::before {
+  content: ""; }
+
+.glyph-cellphone::before {
+  content: ""; }
+
+.glyph-reshare::before {
+  content: ""; }
+
+.glyph-tag::before {
+  content: ""; }
+
+.glyph-repeat-once::before {
+  content: ""; }
+
+.glyph-repeat-all::before {
+  content: ""; }
+
+.glyph-star-outline-2::before {
+  content: ""; }
+
+.glyph-star-2::before {
+  content: ""; }
+
+.glyph-calculator::before {
+  content: ""; }
+
+.glyph-directions::before {
+  content: ""; }
+
+.glyph-location::before {
+  content: ""; }
+
+.glyph-library::before {
+  content: ""; }
+
+.glyph-phonebook::before {
+  content: ""; }
+
+.glyph-memo::before {
+  content: ""; }
+
+.glyph-microphone::before {
+  content: ""; }
+
+.glyph-post-update::before {
+  content: ""; }
+
+.glyph-back-to-window::before {
+  content: ""; }
+
+.glyph-fullscreen::before {
+  content: ""; }
+
+.glyph-new-folder::before {
+  content: ""; }
+
+.glyph-calendar-reply::before {
+  content: ""; }
+
+.glyph-unsync-folder::before {
+  content: ""; }
+
+.glyph-report-hacked::before {
+  content: ""; }
+
+.glyph-sync-folder::before {
+  content: ""; }
+
+.glyph-block-contact::before {
+  content: ""; }
+
+.glyph-switch-apps::before {
+  content: ""; }
+
+.glyph-add-friend::before {
+  content: ""; }
+
+.glyph-touch-pointer::before {
+  content: ""; }
+
+.glyph-go-to-start::before {
+  content: ""; }
+
+.glyph-zero-bar::before {
+  content: ""; }
+
+.glyph-one-bar::before {
+  content: ""; }
+
+.glyph-two-bars::before {
+  content: ""; }
+
+.glyph-three-bars::before {
+  content: ""; }
+
+.glyph-four-bars::before {
+  content: ""; }
+
+.glyph-scan::before {
+  content: ""; }
+
+.glyph-preview::before {
+  content: ""; }
+
+.glyph-hamburger::before {
+  content: ""; }
+
+.glyph-checkbox-composite::before {
+  content: ""; }
+
+.glyph-checkbox-indeterminate::before {
+  content: ""; }
+
+.glyph-warning::before {
+  content: ""; }
+
+.glyph-shopping-cart::before {
+  content: ""; }
+
+.glyph-flag-2::before {
+  content: ""; }
+
+.glyph-completed::before {
+  content: ""; }
+
+.glyph-music-album::before {
+  content: ""; }
+
+.glyph-info::before {
+  content: ""; }
+
+.glyph-devices::before {
+  content: ""; }
+
+.glyph-expand::before {
+  content: ""; }
+
+.glyph-collapse::before {
+  content: ""; }
+
+.glyph-radio-btn-off::before {
+  content: ""; }
+
+.glyph-radio-btn-on::before {
+  content: ""; }
+
+.glyph-radio-bullet::before {
+  content: ""; }
+
+.glyph-media-browse::before {
+  content: ""; }
+
+.glyph-miracast-small::before {
+  content: ""; }
+
+.glyph-miracast-large::before {
+  content: ""; }
+
+.glyph-playback-rate-1x::before {
+  content: ""; }
+
+.glyph-playback-rate-other::before {
+  content: ""; }
+
+.glyph-subscription-add::before {
+  content: ""; }
+
+.glyph-subscription-add-mirrored::before {
+  content: ""; }
+
+.glyph-subscriptions::before {
+  content: ""; }
+
+.glyph-subscriptions-mirrored::before {
+  content: ""; }
