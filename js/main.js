@@ -117,7 +117,6 @@ function change_char_dialog() {
 };
 
 document.getElementById("character_selection").addEventListener("change", change_char);
-// document.getElementById("rand_char_select").addEventListener("click", change_char);
 
 function rand_change_char() {
     var num_char = character_list.length;
