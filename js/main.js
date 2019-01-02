@@ -1,8 +1,4 @@
-﻿// NAVIGATION
-document.getElementById("menu_icon").addEventListener("click", toggle_nav);
-document.getElementById("menu_icon_sm").addEventListener("click", toggle_nav);
-
-// CLOSE HAMBURGER MENU IF OPEN AND CLICKING ELSEWHERE ON PAGE
+﻿// CLOSE HAMBURGER MENU IF OPEN AND CLICKING ELSEWHERE ON PAGE
 // TAKEN FROM STACK OVERFLOW - http://stackoverflow.com/questions/1403615/use-jquery-to-hide-a-div-when-the-user-clicks-outside-of-it 
 $(document).mouseup(function (e) {
     var container = $("nav");
@@ -13,11 +9,6 @@ $(document).mouseup(function (e) {
         container.removeClass("nav_open");
     }
 });
-
-// TOGGLES THE NAV MENU OPEN AND CLOSED
-function toggle_nav(event) {
-    $("#nav").toggleClass("nav_open");
-};
 
 // RUN OPERATIONS ON LOAD
 window.onload = function () {
