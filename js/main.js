@@ -18,6 +18,14 @@ window.onload = function () {
     load_settings();
 };
 
+
+// CHARACTER CARD
+document.getElementById("char_card").addEventListener("click", (e)=> {
+    let card = e.currentTarget;
+    card.classList.toggle("char_card_collapse")
+})
+
+
 // LIBRARY DIALOG BOX
 //document.getElementById("library").addEventListener("click", lib_dialog);
 //function lib_dialog() {
@@ -39,7 +47,7 @@ window.onload = function () {
 
 // SETTINGS DIALOG BOX
 document.getElementById("settings").addEventListener("click", settings_dialog);
-    function settings_dialog() {
+function settings_dialog() {
     $( "#settings_dialog" ).dialog({
         title: "Settings",
         modal: true,
@@ -93,7 +101,6 @@ function refresh_tabs() {
     $( "#tabs" ).tabs( "refresh" );
 }
 
-
 // CHANGE CHARACTER FUNCTION (ON CLICK OR TAP).
 document.getElementById("change_char").addEventListener("click", change_char_dialog);
 function change_char_dialog() {
@@ -117,7 +124,6 @@ function change_char_dialog() {
 };
 
 document.getElementById("character_selection").addEventListener("change", change_char);
-
 function rand_change_char() {
     var num_char = character_list.length;
     var rand_num = Math.floor((Math.random() * num_char));
@@ -161,7 +167,6 @@ function change_char() {
     document.getElementById("birthday").innerHTML = eval(chosen_char).birthday;
     document.getElementById("description").innerHTML = eval(chosen_char).description;
     document.getElementById("char_photo").src = eval(chosen_char).picture;
-    document.getElementById("char_photo_2").src = eval(chosen_char).picture;
     document.getElementById("char_card").style.background = eval(chosen_char).accent;
 
     // LOADING NUMERIC TRAIT VALUES
@@ -325,7 +330,6 @@ document.getElementById('sec_ed').addEventListener('click', save_settings);
 document.getElementById('first_ed').addEventListener('click', save_settings);
 document.getElementById('die_animation').addEventListener('click', save_settings);
 document.getElementById('die_sound').addEventListener('click', save_settings);
-
 function save_settings() {
     var game_edition = $('input[name=game_edition]:checked').val();
     var play_animation = document.getElementById('die_animation').checked;
@@ -401,8 +405,6 @@ function you_died() {
     };
 };
 
-
-
 // CALCULATING DIALOG WIDTH
 function find_dialog_width() {
     var viewport_width = $(window).width();
@@ -414,7 +416,6 @@ function find_dialog_width() {
     return dialog_width
 }
 
-
 // CALCULATING DIALOG HEIGHT
 function find_dialog_height() {
     var viewport_width = $(window).width();
@@ -425,7 +426,6 @@ function find_dialog_height() {
     }
     return dialog_height;
 }
-
 
 // REVEAL THE HAUNT
 document.getElementById("reveal_haunt").addEventListener("click", open_dialog);

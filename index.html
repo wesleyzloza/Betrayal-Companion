@@ -67,37 +67,36 @@
     <main>
         <!-- SIDEBAR (LARGE SCREENS) - DEFAULT AREA (SMALL SCREENS) -->
         <div id="side_bar">
-            <div id="char_card" class="row">
-                <img id="char_photo" class="hidden-sm" src="images/chars/char_00_default.png" />
-                <p id="char_name" class="text-center">--</p>
+            <div id="char_card" class="row char_card_collapse">
+                <div class="row-flex" style="margin-bottom: 1em">
+                    <img id="char_photo" src="images/chars/char_00_default.png" />
+                    <p id="char_name">--</p>
+                </div>
+                
+                <!-- SHORT DESCRIPTION -->
+                <div class="row" style="margin-bottom: 1em;">
+                    <div id="char_properties">
+                        <label>Age: </label><span id="age">--</span><br />
+                        <label>Height: </label><span id="height">--</span><br />
+                        <label>Weight: </label><span id="weight">--</span><br />
+                        <label>Hobbies: </label><span id="hobbies">--</span><br />
+                        <label>Birthday: </label><span id="birthday">--</span>
+                    </div>
+                </div>
+
+                <!-- LONG DESCRIPTION -->
+                <div id="char_description" class="row">
+                    <div id="description">--</div>
+                </div>
             </div>
 
-            <!-- CHARACTER INFORMATION -->
-            <div class="row pad">
-                <div id="char_properties">
-                    <label>Age: </label><span id="age">--</span><br />
-                    <label>Height: </label><span id="height">--</span><br />
-                    <label>Weight: </label><span id="weight">--</span><br />
-                    <label>Hobbies: </label><span id="hobbies">--</span><br />
-                    <label>Birthday: </label><span id="birthday">--</span>
-                </div>
-                <img id="char_photo_2" class="hidden-lg" src="images/chars/char_00_default.png" />
-            </div>
 
             <!-- TABS -->
             <div id="tabs">
                 <ul id="tab_list">
-                    <li><a href="#tabs-1">Description</a></li>
                     <li><a href="#tabs-2">Stats</a></li>
                 </ul>
-
-                <!-- CHARACTER DESCRIPTION / BACKSTORY -->
-                <div id="tabs-1">
-                    <div id="char_description">
-                        <div id="description">--</div>
-                    </div>
-                </div>
-
+ 
                 <!-- CHARACTER STATISTICS -->
                 <div id="tabs-2">
                     <div id="char_stats">
@@ -234,7 +233,7 @@
     </div>
 
     <!-- CHANGE CHARACTER -->
-    <div class="modal" id="char_dialog" tite="Choose Character">
+    <div class="modal" id="char_dialog" title="Choose Character">
         <div class="row">
             <form>
                 <div class="row">
@@ -347,7 +346,7 @@
     </div>-->
 
     <!-- DICE ROLL -->
-    <div id="dice_roll_dialog">
+    <div class="modal" id="dice_roll_dialog">
         <div class="row marg-b"> 
             <div class="col col-8">
                 <div id="slider_contain">
@@ -365,7 +364,7 @@
     </div>
 
     <!-- APP SETTINGS -->
-    <div id="settings_dialog">
+    <div class="modal" id="settings_dialog">
         <div class="row">
             <!-- Bugfix for odd dialog behavior. https://bugs.jqueryui.com/ticket/6006 -->
             <button style="display: none;" autofocus>Bugfix</button>
@@ -419,7 +418,7 @@
     </div>
 
     <!-- ABOUT SECTION -->
-    <div id="about_dialog">
+    <div class= "modal" id="about_dialog">
         <div class="row marg-b">
             <h2>Legal</h2>
             <p>Betrayal at House on the Hill and its expansions are games created by <a href="http://avalonhill.wizards.com/">Avalon Hill/Wizards of the Coast</a> and are no way affiliated with this app or its developer. The developer of this app does not claim the logos, graphics, and content associated with these games as their own; these items are the right of the publisher. Betrayal Companion is fan made and to the knowledge of the developer satisfies the Intellectual Property Ownership; Rights Granted to You section in the <a href="http://company.wizards.com/legal/terms-use">Terms of Use</a> provided by <a href="http://avalonhill.wizards.com/">Avalon Hill/Wizards of the Coast</a>.</p>
