@@ -351,13 +351,13 @@ button {
 
 /* NON LAYOUT PARAMETERS */
 #side_bar {
-    margin: 1em;
     float: left;
-    height: calc(100% - 2em);
-    width: calc(100% - 2em);
+    height: 100%;
+    width: 100%;
     background: #171717;
     overflow-y: hidden;
-    border-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
 }
 
 #char_card {
@@ -779,23 +779,24 @@ nav {
 #nav_list {
     margin: 0; 
     list-style: none;
-    width: auto;
+    width: 100%;
+    display: flex;
 }
 
-    #nav_list li {
-        display: block;
-        float: left;
-        width: 48px;
-        height: 48px;
-        cursor: pointer;
-        overflow: hidden;
-        white-space: nowrap;
-    }
+#nav_list li {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
-        #nav_list li:hover {
-            background: rgba(255,255,255,0.2);
-            transition: linear 0.2s;
-        }
+#nav_list li:hover {
+    background: rgba(255,255,255,0.2);
+    transition: linear 0.2s;
+}
 
 .nav-icon {
     width: 48px;
@@ -805,6 +806,10 @@ nav {
     float: left;
     margin: 0;
     font-size: 1.2em;
+}
+
+.nav-text {
+    display: none;
 }
 
 .nav-text * {

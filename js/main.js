@@ -66,7 +66,7 @@ function settings_dialog() {
 };
 
 // ABOUT DIALOG BOX
-document.getElementById("about").addEventListener("click", about_dialog);
+// document.getElementById("about").addEventListener("click", about_dialog);
 function about_dialog() {
     $("#about_dialog").dialog({
         title: "About",
