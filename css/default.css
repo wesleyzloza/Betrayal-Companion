@@ -11,7 +11,6 @@ body {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    font-size: 80%;
     background: black;
 }
 
@@ -361,11 +360,20 @@ button {
 }
 
 #char_card {
-    overflow: hidden;
     height: calc(100vh - 48px);
     padding: 1em;
     background: #111;
-    transition: ease-in-out 0.5s;
+    box-shadow: inset 0px -2px 2px black;
+    transition: ease-in-out 0.2s;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#char_card * {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #char_card div {
@@ -374,16 +382,17 @@ button {
 
 .char_card_collapse {
     height: 48px !important;
+    overflow: hidden !important;
+    transition: ease-in-out 0.2s;
 }
 
 .char_card_collapse div {
-    flex-direction: row-reverse !important;
     justify-content: space-between !important;
 }
 
 .char_card_collapse #char_photo {
-    height: 24px !important;
-    width: 24px;
+    height: 0px !important;
+    width: 0px;
     flex-grow: 0 !important;
 }
 
@@ -395,9 +404,7 @@ button {
 #char_photo {
     height: 100px; 
     width: 100px;
-    align-self: start;
-    justify-self: center;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.1s;
 }
 
 #char_name {
@@ -820,6 +827,8 @@ nav {
 #tabs {
     display: inline-block !important;
     width: 100%;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
 }
 
     #tabs ul li a {
