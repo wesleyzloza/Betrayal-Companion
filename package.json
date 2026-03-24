@@ -10,7 +10,8 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .ts,.tsx ."
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
   },
   "keywords": [],
   "author": {
@@ -29,11 +30,9 @@
     "@electron-forge/plugin-vite": "^7.11.1",
     "@electron/fuses": "^1.8.0",
     "@types/electron-squirrel-startup": "^1.0.2",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
     "electron": "41.0.3",
-    "eslint": "^8.57.1",
-    "eslint-plugin-import": "^2.32.0",
+    "oxlint": "^1.56.0",
+    "oxlint-tsgolint": "^0.17.2",
     "typescript": "^6.0.2",
     "vite": "^8.0.2"
   },
