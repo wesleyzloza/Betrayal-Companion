@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "commonjs",
-    "allowJs": true,
+    "module": "nodenext",
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "noImplicitAny": true,
+    "strict": true,
     "sourceMap": true,
     "outDir": "dist",
-    "moduleResolution": "node",
-    "resolveJsonModule": true
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
   }
 }
