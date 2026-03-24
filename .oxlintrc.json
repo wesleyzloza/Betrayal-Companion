@@ -9,6 +9,7 @@
     "jsdoc",
     "node",
     "promise",
+    "vue"
   ],
   "categories": {},
   "rules": {},
