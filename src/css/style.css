@@ -1,0 +1,29 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --canvas-background: #222;
+  --surface-background: #333;
+  --surface-background--hover: #404040;
+  --surface-background--pressed: #1f1f1f;
+
+  background: var(--canvas-background);
+  color-scheme: dark;
+  font-family: system-ui;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}

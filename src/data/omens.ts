@@ -1,0 +1,15 @@
+export const OMENS = [
+  "bite",
+  "book",
+  "crystal_ball",
+  "dog",
+  "girl",
+  "holy_symbol",
+  "madman",
+  "mask",
+  "medallion",
+  "ring",
+  "skull",
+  "spear",
+  "spirit_board",
+] as const;

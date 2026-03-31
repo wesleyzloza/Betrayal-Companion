@@ -10,7 +10,7 @@ export default defineConfig({
     '*': 'vp check --fix',
   },
   fmt: {
-    semi: false,
+    semi: true,
     singleQuote: true,
   },
   lint: {

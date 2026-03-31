@@ -1,0 +1,15 @@
+export const ROOMS = [
+  "abandoned_room",
+  "balcony",
+  "catacombs",
+  "charred_room",
+  "dining_room",
+  "furnace_room",
+  "gallery",
+  "gymnasium",
+  "junk_room",
+  "kitchen",
+  "master_bedroom",
+  "pentagram_chamber",
+  "servants_quarters",
+] as const;
