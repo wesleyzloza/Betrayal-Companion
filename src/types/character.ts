@@ -1,3 +1,4 @@
+import type { CharacterAccent } from './character-accent';
 import type { CharacterTraits } from './character-traits';
 
 /**
@@ -17,7 +18,7 @@ export interface Character {
   /**
    * The accent color associated with the character.
    */
-  accent: 'red' | 'green' | 'purple' | 'yellow' | 'blue' | 'white';
+  accent: CharacterAccent;
 
   /**
    * Age
