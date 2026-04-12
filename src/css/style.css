@@ -5,8 +5,9 @@ body {
 }
 
 :root {
-  --canvas-background: #222;
-  --surface-background: #333;
+  --accent-color: #b0891a;
+  --canvas-background: #0a141a;
+  --surface-background: hsl(203, 44%, 15%);
   --surface-background--hover: #404040;
   --surface-background--pressed: #1f1f1f;
 
@@ -25,5 +26,15 @@ body {
   &::before,
   &::after {
     display: none;
+  }
+}
+
+header {
+  select {
+    color-scheme: dark;
+    background: var(--canvas-background);
+    border-color: var(--accent-color);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
   }
 }

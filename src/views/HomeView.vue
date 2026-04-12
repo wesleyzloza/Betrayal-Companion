@@ -1,17 +1,23 @@
 <template>
   <div class="home">
+    <!--
     <div>
       <HauntMeter/>
     </div>
+    -->
     <div class="card-container">
-      <CharacterCard :character v-for="(character, index) in characters" :key="index"/>
+      <CharacterCard
+        :character
+        v-for="character in characters"
+        :key="character.id"
+      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import CharacterCard from '@/components/CharacterCard.vue';
-import HauntMeter from '@/components/HauntMeter.vue';
+// import HauntMeter from '@/components/HauntMeter.vue';
 import { useApplicationStore } from '@/stores/application';
 import { storeToRefs } from 'pinia';
 const store = useApplicationStore();

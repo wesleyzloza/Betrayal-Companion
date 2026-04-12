@@ -1,14 +1,18 @@
 <template>
   <div class="character-card" :class="cardAccentClass">
     <div class="character-photo-container">
-      <img :alt="`Profile photo of ${character.name}.`" :src="`images/${character.id}.png`" height="96" width="96" />
+      <img
+        :alt="`Profile photo of ${character.name}.`"
+        :src="`images/${character.id}.png`"
+        height="96"
+        width="96"
+      />
     </div>
     <dl class="character-properties">
       <div>
         <dt class="visually-hidden">Character Name</dt>
         <dd class="character-name">{{ character.name }}</dd>
       </div>
-      <!--
       <div>
         <dt>Age</dt>
         <dd>{{ character.age }}</dd>
@@ -29,22 +33,29 @@
         <dt>Birthday</dt>
         <dd>{{ character.birthday }}</dd>
       </div>
-      -->
     </dl>
-    <!--
     <p class="character-description" v-html="character.description"></p>
-    -->
     <form>
-      <CharacterTraitMeter :character-id="character.id" label="Speed" :trait="character.traits.speed" />
-      <CharacterTraitMeter :character-id="character.id" label="Might" :trait="character.traits.might" />
-      <CharacterTraitMeter :character-id="character.id" label="Sanity" :trait="character.traits.sanity" />
-      <CharacterTraitMeter :character-id="character.id" label="Knowledge" :trait="character.traits.knowledge" />
-      <button type="reset">
-        Reset
-      </button>
-      <button @click="$event.preventDefault(); removeCharacter(character.id)">
-        Remove
-      </button>
+      <CharacterTraitMeter
+        :character-id="character.id"
+        label="Speed"
+        :trait="character.traits.speed"
+      />
+      <CharacterTraitMeter
+        :character-id="character.id"
+        label="Might"
+        :trait="character.traits.might"
+      />
+      <CharacterTraitMeter
+        :character-id="character.id"
+        label="Sanity"
+        :trait="character.traits.sanity"
+      />
+      <CharacterTraitMeter
+        :character-id="character.id"
+        label="Knowledge"
+        :trait="character.traits.knowledge"
+      />
     </form>
   </div>
 </template>
@@ -53,34 +64,41 @@
 import type { Character } from '@/types/character';
 import { computed } from 'vue';
 import CharacterTraitMeter from './CharacterTraitMeter.vue';
-import { useApplicationStore } from '@/stores/application';
 
-const { removeCharacter } = useApplicationStore();
 const props = defineProps<{ character: Character }>();
-const cardAccentClass = computed(() => `character-card--${props.character.accent}`);
-
+const cardAccentClass = computed(
+  () => `character-card--${props.character.accent}`,
+);
 </script>
 
 <style scoped>
 .character-card {
   --accent-color: transparent;
   aspect-ratio: 3 / 4;
-  background: #444 linear-gradient(var(--accent-color), transparent 30%);
+  background: #222;
   border-radius: 8px;
   box-shadow:
-    0px 0px 1px rgba(3, 7, 18, 0.10),
-    0px 1px 4px rgba(3, 7, 18, 0.20),
-    0px 1px 9px rgba(3, 7, 18, 0.30),
-    0px 3px 15px rgba(3, 7, 18, 0.40),
-    0px 4px 24px rgba(3, 7, 18, 0.50),
-    inset 0px -4px 0px rgba(0, 0, 0, 0.5),
-    inset 0px 1px 1px rgba(255, 255, 255, 0.25);
+    0px 0px 1px rgba(3, 7, 18, 0.1),
+    0px 1px 4px rgba(3, 7, 18, 0.2),
+    0px 1px 9px rgba(3, 7, 18, 0.3),
+    0px 3px 15px rgba(3, 7, 18, 0.4),
+    0px 4px 24px rgba(3, 7, 18, 0.5),
+    inset 0px -1px 0px rgba(0, 0, 0, 0.5),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.25),
+    inset 0px 0px 0px 0.5rem var(--accent-color);
   box-sizing: border-box;
   font-size: 0.75rem;
   overflow: clip;
   padding: 1.5rem;
   width: 320px;
   /* height: 400px; */
+}
+
+@supports (corner-shape: squircle) {
+  .character-card {
+    corner-shape: squircle;
+    border-radius: 1rem;
+  }
 }
 
 .character-card--blue {
@@ -107,7 +125,6 @@ const cardAccentClass = computed(() => `character-card--${props.character.accent
   --accent-color: silver;
 }
 
-
 .character-photo-container {
   display: flex;
   flex-direction: column;
@@ -116,7 +133,6 @@ const cardAccentClass = computed(() => `character-card--${props.character.accent
 }
 
 .character-properties {
-
   dt,
   dd {
     display: inline;
@@ -128,7 +144,7 @@ const cardAccentClass = computed(() => `character-card--${props.character.accent
     font-weight: 500;
 
     &::after {
-      content: ": "
+      content: ': ';
     }
   }
 }
@@ -148,7 +164,7 @@ const cardAccentClass = computed(() => `character-card--${props.character.accent
   -webkit-line-clamp: 3;
 }
 
-button[type="reset"] {
+button[type='reset'] {
   border-radius: 4px;
   border: none;
   cursor: pointer;

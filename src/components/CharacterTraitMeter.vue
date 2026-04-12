@@ -3,17 +3,19 @@
     <fieldset>
       <legend>{{ label }}</legend>
       <ol class="meter">
-        <li v-for="(value, index) in trait.values"
+        <li
+          v-for="(value, index) in trait.values"
           :key="index"
           :class="{ 'meter-item--default': trait.hp === index }"
-          >
+        >
           <label class="input">
             <img
               v-if="index === 0"
               alt="Skull icon."
               src="/images/skull.svg"
               height="16"
-              width="16"/>
+              width="16"
+            />
             <template v-else>
               {{ value }}
             </template>
@@ -21,13 +23,16 @@
               type="radio"
               :name="meterName"
               :checked="index === trait.hp"
-              @input="hpCurrentValue = index">
+              @input="hpCurrentValue = index"
+            />
           </label>
         </li>
       </ol>
       <label class="output__adj">
         <abbr title="Adjustment">Adj.</abbr>&nbsp;
-        <output :class="{ 'positive': hpAdjustment > 0, 'negative': hpAdjustment < 0 }">
+        <output
+          :class="{ positive: hpAdjustment > 0, negative: hpAdjustment < 0 }"
+        >
           {{ hpAdjustmentText }}
         </output>
       </label>
@@ -45,43 +50,52 @@ import { computed, ref } from 'vue';
 
 const props = defineProps<{
   characterId: string;
-  label: string,
-  trait: CharacterTrait
+  label: string;
+  trait: CharacterTrait;
 }>();
 
 const meterName = computed(() => `${props.characterId}-${props.label}`);
 const hpDefaultValue = ref(props.trait.hp);
 const hpCurrentValue = ref(props.trait.hp);
-const hpAdjustment = computed(() => hpCurrentValue.value - hpDefaultValue.value);
-const hpAdjustmentText = computed(() => `${hpAdjustment.value > 0 ? '+' : ''}${hpAdjustment.value}`);
-
+const hpAdjustment = computed(
+  () => hpCurrentValue.value - hpDefaultValue.value,
+);
+const hpAdjustmentText = computed(
+  () => `${hpAdjustment.value > 0 ? '+' : ''}${hpAdjustment.value}`,
+);
 </script>
 
 <style scoped>
-
 .meter {
-  background: color-mix(black, transparent 80%);
+  background: #333;
   border-radius: 4px;
+}
+
+@supports (corner-shape: squircle) {
+  .meter {
+    corner-shape: squircle;
+    border-radius: 0.5rem;
+  }
 }
 
 fieldset {
   border: none;
   display: grid;
   gap: 0.5lh;
-  grid-template-areas: "label adj hp" "meter meter meter";
+  grid-template-areas: 'label adj hp' 'meter meter meter';
   grid-template-columns: 1fr repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   margin: 0.5lh 0 0 0;
   padding: 0;
 }
 
-
 legend {
   float: inline-start;
   grid-area: label;
 }
 
-ol, li {
+ol,
+li {
   margin: 0;
   padding: 0;
 }
@@ -114,7 +128,7 @@ label {
     background: #111;
   }
 
-  input[type="radio"] {
+  input[type='radio'] {
     opacity: 0;
     pointer-events: none;
     position: fixed;
@@ -141,5 +155,4 @@ label {
 .negative {
   color: red;
 }
-
 </style>

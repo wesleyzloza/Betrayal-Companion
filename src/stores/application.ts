@@ -13,9 +13,9 @@ export const useApplicationStore = defineStore('application', {
   getters: {
     characters: (state) => {
       return state.characterIds
-        .map(id => characters.find(character => character.id === id))
-        .filter(character => character != null);
-    }
+        .map((id) => characters.find((character) => character.id === id))
+        .filter((character) => character != null);
+    },
   },
   actions: {
     setHauntLevel(level: number) {
@@ -28,10 +28,12 @@ export const useApplicationStore = defineStore('application', {
     removeCharacter(id: string) {
       const index = this.characterIds.indexOf(id);
       if (index !== -1) this.characterIds.splice(index, 1);
-    }
-  }
+    },
+    removeCharacters() {
+      this.characterIds = [];
+    },
+  },
 });
-
 
 /*
   const character = ref<Character | null>(null);
