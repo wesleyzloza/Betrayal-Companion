@@ -102,23 +102,23 @@ const cardAccentClass = computed(
 }
 
 .character-card--blue {
-  --accent-color: #2d6281;
+  --accent-color: #0a5d8b;
 }
 
 .character-card--green {
-  --accent-color: rgb(34, 159, 34);
+  --accent-color: #007041;
 }
 
 .character-card--red {
-  --accent-color: #b3234b;
+  --accent-color: #861f18;
 }
 
 .character-card--yellow {
-  --accent-color: gold;
+  --accent-color: #ca9616;
 }
 
 .character-card--purple {
-  --accent-color: violet;
+  --accent-color: #6b365d;
 }
 
 .character-card--white {
