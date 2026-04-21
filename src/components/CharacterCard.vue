@@ -3,7 +3,7 @@
     <div class="character-photo-container">
       <img
         :alt="`Profile photo of ${character.name}.`"
-        :src="`images/${character.id}.png`"
+        :src="`images/${character.id}.webp`"
         height="96"
         width="96"
       />
