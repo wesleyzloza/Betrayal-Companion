@@ -26,10 +26,6 @@ import CharacterMenuVue from '@/components/CharacterMenu.vue';
     <label for="game-edition">Game Edition</label>
     -->
     <div class="options">
-      <select id="game-edition" name="game-edition" value="2">
-        <option value="1">1st Edition</option>
-        <option value="2">2nd Edition</option>
-      </select>
       <CharacterMenuVue />
     </div>
   </header>

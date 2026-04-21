@@ -1,6 +1,6 @@
 import type { Character } from '@/types/character';
 
-export const Characters: Character[] = [
+export const characters: Character[] = [
   {
     id: 'josef_hooper',
     name: 'Josef "Brosef" Hooper',

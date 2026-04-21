@@ -21,7 +21,7 @@ import CharacterCard from '@/components/CharacterCard.vue';
 import { useApplicationStore } from '@/stores/application';
 import { storeToRefs } from 'pinia';
 const store = useApplicationStore();
-const { characters } = storeToRefs(store);
+const { activeCharacters: characters } = storeToRefs(store);
 </script>
 
 <style scoped>

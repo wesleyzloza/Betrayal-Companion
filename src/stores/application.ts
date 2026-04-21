@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia';
 import { useStorage } from '@vueuse/core';
-import { characters } from '@/data/characters';
+import { characters as oldCharacters } from '@/data/characters';
+import { characters as newCharacters } from '@/data/characters-third-edition';
 
 //const characterIds = characters.map(char => char.id);
 
@@ -8,16 +9,27 @@ export const useApplicationStore = defineStore('application', {
   state: () => ({
     hauntLevel: useStorage<number>('hauntLevel', 0),
     characterIds: useStorage<string[]>('characterIds', []),
-    edition: useStorage<1 | 2>('edition', 2),
+    edition: useStorage<1 | 2 | 3>('edition', 3),
   }),
   getters: {
-    characters: (state) => {
+    availableCharacters: (state) => {
+      return state.edition === 3 ? newCharacters : oldCharacters;
+    },
+    activeCharacters: (state) => {
+      const characterCollection =
+        state.edition === 3 ? newCharacters : oldCharacters;
       return state.characterIds
-        .map((id) => characters.find((character) => character.id === id))
+        .map((id) =>
+          characterCollection.find((character) => character.id === id),
+        )
         .filter((character) => character != null);
     },
   },
   actions: {
+    setEdition(edition: 1 | 2 | 3) {
+      this.edition = edition;
+      this.characterIds = [];
+    },
     setHauntLevel(level: number) {
       this.hauntLevel = level;
     },
