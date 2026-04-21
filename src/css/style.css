@@ -13,7 +13,7 @@ body {
 
   background: var(--canvas-background);
   color-scheme: dark;
-  font-family: system-ui;
+  font-family: system-ui, sans-serif;
 }
 
 .visually-hidden:not(:focus):not(:active) {
