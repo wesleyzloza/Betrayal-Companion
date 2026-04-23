@@ -23,7 +23,7 @@
               type="radio"
               :name="meterName"
               :checked="index === trait.hp"
-              @input="hpCurrentValue = index"
+              @input="hpCurrentValue = toDigitOrDefault(index)"
             />
           </label>
         </li>
@@ -46,6 +46,7 @@
 
 <script setup lang="ts">
 import type { CharacterTrait } from '@/types/character-trait';
+import type { Digit } from '@/types/digit';
 import { computed, ref } from 'vue';
 
 const props = defineProps<{
@@ -63,6 +64,10 @@ const hpAdjustment = computed(
 const hpAdjustmentText = computed(
   () => `${hpAdjustment.value > 0 ? '+' : ''}${hpAdjustment.value}`,
 );
+
+function toDigitOrDefault(value: number): Digit {
+  return value >= 0 && value <= 9 ? value as Digit : 0;
+}
 </script>
 
 <style scoped>
