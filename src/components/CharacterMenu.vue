@@ -22,12 +22,16 @@ import { onMounted, ref } from 'vue';
 import { storeToRefs } from 'pinia';
 const store = useApplicationStore();
 
-const { availableCharacters } = storeToRefs(store);
+const { availableCharacters, activeCharacters } = storeToRefs(store);
 const activeCharacterId = ref<string | undefined>();
 const activeGameEdition = ref<1 | 2 | 3>(3);
 
 onMounted(() => {
-  activeCharacterId.value = availableCharacters.value[0]?.id;
+  if (activeCharacters.value.length === 0) {
+    setCharacterToFirstAvailable();
+  } else {
+    activeCharacterId.value = activeCharacters.value[0]?.id;
+  }
 });
 
 function addCharacter() {
@@ -39,6 +43,16 @@ function addCharacter() {
 
 function setEdition() {
   store.setEdition(activeGameEdition.value);
+  store.removeCharacters();
+  setCharacterToFirstAvailable();
+}
+
+function setCharacterToFirstAvailable() {
+  const firstCharacterId = availableCharacters.value[0]?.id;
+  if (firstCharacterId) {
+    store.addCharacter(firstCharacterId);
+    activeCharacterId.value = firstCharacterId;
+  }
 }
 </script>
 
